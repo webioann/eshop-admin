@@ -1,10 +1,12 @@
+import Totals from '../Totals/Totals.tsx';
 import styles from './dashboard.module.scss'
 
 function Dashboard() {
     return (
-        <section className={styles.dashboard}>
+        <main className={styles.dashboard}>
+            <Totals />
             Dashboard
-        </section>
+        </main>
     )
 }
 
