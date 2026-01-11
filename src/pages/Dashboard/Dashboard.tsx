@@ -1,4 +1,4 @@
-import TotalsCell from '../TotalsCell/TotalsCell.tsx';
+import TotalsCell from '../../components//TotalsCell/TotalsCell.tsx';
 import { Users_Icon, ShoppingBag_Icon, CubeOutline_Icon, Dollar_Icon } from '../../icons/icons.tsx';
 import styles from './dashboard.module.scss'
 
