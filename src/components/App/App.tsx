@@ -12,13 +12,14 @@ import Settings from "../../pages/Settings/Settings.tsx";
 import styles from './app.module.scss';
 
 function App() {
+  console.log("RENDER ===>")
   return (
     <div className={styles.app}>
       <SideNavbar/>
       <main className={styles.main}>
         <Header />
         <Routes>
-          <Route path="/" element={<Dashboard/>} />
+          <Route index element={<Dashboard/>} />
           <Route path="/products" element={<Products/>} />
           <Route path="/orders" element={<Orders/>} />
           <Route path="/customers" element={<Customers/>} />
