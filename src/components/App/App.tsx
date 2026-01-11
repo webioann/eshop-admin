@@ -1,19 +1,19 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
-import styles from './app.module.css';
+// import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
+import Header from '../Header/Header.tsx';
+import SideNavbar from '../SideNavbar/SideNavbar.tsx';
+import Dashboard from '../Dashboard/Dashboard.tsx';
+
+import styles from './app.module.scss';
 
 function App() {
   return (
-    <main className={styles.app}>
-      <header>
-        <h1>HOME PAGE</h1>
-        <SignedOut >
-          <SignInButton />
-        </SignedOut>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
-      </header>
-    </main>
+    <div className={styles.app}>
+      <SideNavbar/>
+      <main className={styles.main}>
+        <Header />
+        <Dashboard/>
+      </main>
+    </div>
   );
 }
 export default App;

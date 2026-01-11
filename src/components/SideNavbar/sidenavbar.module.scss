@@ -1,0 +1,48 @@
+.side_navbar{
+    background-color: #e0e0e0;
+    width: 250px;
+    min-height: 100vh;
+    padding: 15px;
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .logo_icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            width: 40px;
+            height: 40px;
+            border-radius: 0.5rem;
+            background-color: green;
+        }
+        .app_name{
+            padding-left: 10px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+        gap: 0.5rem;
+        .link_to{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            border-radius: 0.5rem;
+            padding: 5px 0.5rem;
+            color: #333;
+            font-size: 1.1rem;
+            // border: 1px solid blue;
+            &:hover{
+                color: #000;
+                background-color: green;
+            }
+            .path{
+                padding-left: 10px;
+            }
+        }
+    }
+}
