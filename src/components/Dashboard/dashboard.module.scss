@@ -1,5 +1,39 @@
 .dashboard {
     width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
     background-color: #eeeeee;
     padding: 1.5rem;
+    .totals{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .table_section{
+        background-color: #aaa;
+        padding: 1rem 0;
+        .table_header{
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            & th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid black;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            & tr{
+                min-width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr;
+            }
+        }
+    }
+    
 }
