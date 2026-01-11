@@ -1,6 +1,8 @@
 import styles from './sidenavbar.module.scss'
-import { LuShoppingBag } from "react-icons/lu";
+import { LuHouse, LuShoppingBag, LuClipboardList } from "react-icons/lu";
 import { BiShoppingBag } from "react-icons/bi";
+import { GoPeople } from "react-icons/go";
+import { TbReportSearch, TbSettings } from "react-icons/tb";
 
 function SideNavbar() {
     return (
@@ -15,7 +17,7 @@ function SideNavbar() {
             {/* NAVBAR */}
             <nav className={styles.navbar}>
                 <a href="#" className={styles.link_to}>
-                    <LuShoppingBag size={20} color='#333'/>
+                    <LuHouse size={20} color='#333'/>
                     <p className={styles.path}>Dashboard</p>
                 </a>
                 <a href="#" className={styles.link_to}>
@@ -23,19 +25,19 @@ function SideNavbar() {
                     <p className={styles.path}>Products</p>
                 </a>
                 <a href="#" className={styles.link_to}>
-                    <LuShoppingBag size={20} color='#333'/>
+                    <LuClipboardList size={20} color='#333'/>
                     <p className={styles.path}>Orders</p>
                 </a>
                 <a href="#" className={styles.link_to}>
-                    <LuShoppingBag size={20} color='#333'/>
+                    <GoPeople size={20} color='#333'/>
                     <p className={styles.path}>Customers</p>
                 </a>
                 <a href="#" className={styles.link_to}>
-                    <LuShoppingBag size={20} color='#333'/>
+                    <TbReportSearch size={20} color='#333'/>
                     <p className={styles.path}>Reports</p>
                 </a>
-                                <a href="#" className={styles.link_to}>
-                    <LuShoppingBag size={20} color='#333'/>
+                <a href="#" className={styles.link_to}>
+                    <TbSettings size={20} color='#333'/>
                     <p className={styles.path}>Settings</p>
                 </a>
             </nav>
