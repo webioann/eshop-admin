@@ -1,10 +1,19 @@
 .theme_switcher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 3px;
     cursor: pointer;
-    background-color: blue;
-    border: 1px solid black;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: bold;
-    margin-right: 0.5rem;
+    // background-color: blue;
+    border-radius: 15px;
+
+    .switcher_icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        // border: 2px solid #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

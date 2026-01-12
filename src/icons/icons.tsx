@@ -1,11 +1,13 @@
 
 // THIS IS ICONS HUB FILE ====================================
-import { CgList } from "react-icons/cg";
-import { FaRegUserCircle } from "react-icons/fa";
-import { LuHouse, LuShoppingBag, LuClipboardList, LuUsers } from "react-icons/lu";
 import { BiDollar } from "react-icons/bi";
-import { TbReportSearch, TbSettings } from "react-icons/tb";
+import { BsMoonStars } from "react-icons/bs";
+import { CgList } from "react-icons/cg";
 import { IoCubeOutline } from "react-icons/io5";
+import { FaRegUserCircle } from "react-icons/fa";
+import { FiSun } from "react-icons/fi";
+import { LuHouse, LuShoppingBag, LuClipboardList, LuUsers } from "react-icons/lu";
+import { TbReportSearch, TbSettings } from "react-icons/tb";
 
 interface IIconProps {
     size?: number;
@@ -93,5 +95,20 @@ export function List_Icon({ size, color, title }: IIconProps) {
         </i>
     )
 }
-
+export function Sun_Icon({ size, color, title }: IIconProps) {
+    const css = {'margin': 0, 'padding': 0};
+    return (
+        <i style={css}>
+            <FiSun size={size} color={color} title={title} />
+        </i>
+    )
+}
+export function Moon_Icon({ size, color, title }: IIconProps) {
+    const css = {'margin': 0, 'padding': 0};
+    return (
+        <i style={css}>
+            <BsMoonStars size={size} color={color} title={title} />
+        </i>
+    )
+}
 
