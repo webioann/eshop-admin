@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
 import { UserCircle_Icon, List_Icon } from '../../icons/icons.tsx';
 import { useLocation } from 'react-router-dom';
-import { useThemeContext } from '../../context/utils.ts';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher.tsx';
 import styles from './header.module.scss';
 
 function Header() {
     const location = useLocation();
     const currentPath = location.pathname;
     const [pageTitle, setPageTitle] = useState('Dashboard');
-    const { theme, toggleTheme } = useThemeContext()!;
 
     useEffect(() => {
         const setRouterPath = async () => {
@@ -42,8 +41,8 @@ function Header() {
                     {pageTitle}
                 </h3>
             </div>
-            <span className={styles.user_icon} onClick={() => toggleTheme()}>
-                {theme}
+            <span className={styles.user_icon} >
+                <ThemeSwitcher />
                 <UserCircle_Icon size={30} color="#333" />
             </span>
                 
